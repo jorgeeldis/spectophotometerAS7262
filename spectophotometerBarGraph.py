@@ -51,14 +51,14 @@ while True:
         # Set labels and title
         ax.set_xlabel('Wavelength (nm)')
         ax.set_ylabel('Absorbance (a.u.)')
-        ax.set_title('Absorbance vs. Wavelength of Low Oxygen Blood')
+        ax.set_title('Absorbance vs. Wavelength')
 
         # Save the data to the file
         file.write(f'{x},{y}\n')
 
         # Redraw the plot
         plt.draw()
-        plt.pause(0.01)
+        plt.pause(0.1)
 
     except KeyboardInterrupt:
         break

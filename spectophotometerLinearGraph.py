@@ -56,14 +56,14 @@ while True:
         # Establecer etiquetas y título
         ax.set_xlabel('Wavelength (nm)')
         ax.set_ylabel('Absorbance (a.u.)')
-        ax.set_title('Absorbance vs. Wavelength of Low Oxygen Blood')
+        ax.set_title('Absorbance vs. Wavelength')
 
          # Guardar los datos en el archivo de texto
         file.write(f'{x},{y}\n')
 
         # Redibujar la trama
         plt.draw()
-        plt.pause(0.01)
+        plt.pause(0.1)
 
     except KeyboardInterrupt:
         break
