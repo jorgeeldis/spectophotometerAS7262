@@ -5,7 +5,7 @@ from matplotlib.backends.backend_wxagg import FigureCanvasWxAgg as FigureCanvas
 from matplotlib.figure import Figure
 
 # Configure la conexión en serie
-ser = serial.Serial('COM4', 9600)
+ser = serial.Serial('COM6', 9600)
 
 # Crear listas vacías para almacenar los datos
 x_data = []
@@ -18,7 +18,7 @@ plt.style.use('dark_background')
 fig = Figure()
 ax = fig.add_subplot(111)
 line, = ax.plot([], [])  # Crear una gráfica vacía
-ax.set_xlim(400, 700)  # Establecer los límites del eje x
+ax.set_xlim(350, 750)  # Establecer los límites del eje x
 
 # Crear un archivo para guardar los datos
 filename = 'serial_data_lineal.txt'

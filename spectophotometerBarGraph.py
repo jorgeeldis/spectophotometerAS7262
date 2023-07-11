@@ -18,7 +18,7 @@ plt.style.use('dark_background')
 fig = Figure()
 ax = fig.add_subplot(111)
 line, = ax.plot([], [], drawstyle='steps-pre', linewidth=2)  # Crear una gráfica vacía
-ax.set_xlim(400, 700)  # Establecer los límites del eje x
+ax.set_xlim(350, 750)  # Establecer los límites del eje x
 
 # Crear un archivo para guardar los datos
 filename = 'serial_data_lineal.txt'
