@@ -45,13 +45,17 @@ void loop() {
 
   ams.readRawValues(sensorValues);
   ams.readCalibratedValues(calibratedValues);
-  
+
+    Serial.print("350"); Serial.print(","); Serial.println("0");
+    Serial.print("400"); Serial.print(","); Serial.println("0");
     Serial.print("450"); Serial.print(","); Serial.println(violet);
     Serial.print("500"); Serial.print(","); Serial.println(blue);
     Serial.print("550"); Serial.print(","); Serial.println(green);
     Serial.print("570"); Serial.print(","); Serial.println(yellow);
     Serial.print("600"); Serial.print(","); Serial.println(orange);
     Serial.print("650"); Serial.print(","); Serial.println(red);
+    Serial.print("700"); Serial.print(","); Serial.println("0");
+    Serial.print("750"); Serial.print(","); Serial.println("0");
  
   delay(1000);
 }
