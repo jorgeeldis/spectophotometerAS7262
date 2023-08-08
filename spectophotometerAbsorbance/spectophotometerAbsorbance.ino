@@ -27,11 +27,11 @@ void setup() {
 void loop() {
 
   uint8_t temp = ams.readTemperature();
-  float violet = -log10(calibratedValues[AS726x_VIOLET]/34000.00);
-  float blue = -log10(calibratedValues[AS726x_BLUE]/37000.00);
-  float green = -log10(calibratedValues[AS726x_GREEN]/15000.00);
-  float yellow = -log10(calibratedValues[AS726x_YELLOW]/37000.00);
-  float orange = -log10(calibratedValues[AS726x_ORANGE]/2400.00);
+  float violet = -log10(calibratedValues[AS726x_VIOLET]/37000.00);
+  float blue = -log10(calibratedValues[AS726x_BLUE]/12333.00);
+  float green = -log10(calibratedValues[AS726x_GREEN]/28777.78);
+  float yellow = -log10(calibratedValues[AS726x_YELLOW]/20555.56);
+  float orange = -log10(calibratedValues[AS726x_ORANGE]/16444.44);
   float red = -log10(calibratedValues[AS726x_RED]/7500.00);
   
   ams.startMeasurement(); //comenzar una medicion
